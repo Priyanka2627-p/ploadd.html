@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+        }
+        
+        .small {
+            padding: 10px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-radius: 50%;
+            animation: small 1s linear infinite;
+        }
+        
+        .medium {
+            padding: 10px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-radius: 50%;
+            animation: medium 1s linear infinite;
+        }
+        
+        .large {
+            padding: 10px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-radius: 50%;
+            animation: large 1s linear infinite;
+        }
+        
+        @keyframes small {
+            0% {
+                transform: rotate(720deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        
+        @keyframes medium {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+        
+        @keyframes large {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        
+        h1 {
+            position: absolute;
+            left: -10%;
+            font-family: monospace;
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="large">
+            <div class="medium">
+                <div class="small">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <h1>LOADING</h1>
+    </div>
+</body>
+
+</html>
